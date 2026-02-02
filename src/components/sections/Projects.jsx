@@ -1,21 +1,33 @@
 const PROJECTS = [
   {
-    title: "Project One",
-    stack: "React, Node.js",
+    title: "Book Shop",
+    stack: "React,tailwind, Shadcn UI",
     imageAlt: "Project preview",
-    href: "https://github.com/",
+    href: "https://book-shop-uilr.vercel.app/",
   },
   {
-    title: "Project Two",
+    title: "Car Rental",
     stack: "React, Tailwind",
     imageAlt: "Project preview",
-    href: "https://github.com/",
+    href: "https://rental-car-ruby.vercel.app/",
   },
   {
-    title: "Project Three",
-    stack: "React, API",
+    title: "Egg Timer",
+    stack: "React, Tailwind",
     imageAlt: "Project preview",
-    href: "https://github.com/",
+    href: "https://egg-timer-phi.vercel.app/",
+  },
+  {
+    title: "T-shop",
+    stack: "React, Tailwind",
+    imageAlt: "Project preview",
+    href: "https://t-shop-jet.vercel.app/",
+  },
+  {
+    title: "Movie Search Service",
+    stack: "React, Tailwind",
+    imageAlt: "Project preview",
+    href: "https://goit-react-hw-05-eight-puce-31.vercel.app/",
   },
 ];
 
@@ -27,10 +39,15 @@ export default function Projects() {
 
         <ul className="mt-10 grid gap-6 md:grid-cols-2">
           {PROJECTS.map((p) => (
-            <li key={p.title} className="rounded-xl border border-border bg-background">
+            <li
+              key={p.title}
+              className="rounded-xl border border-border bg-background"
+            >
               <div className="aspect-[16/10] w-full rounded-t-xl bg-muted" />
               <div className="p-6">
-                <p className="text-xs font-medium text-foreground/60">{p.stack}</p>
+                <p className="text-xs font-medium text-foreground/60">
+                  {p.stack}
+                </p>
                 <h3 className="mt-2 text-lg font-semibold">{p.title}</h3>
                 <a
                   className="mt-4 inline-flex text-sm underline-offset-4 hover:underline"
@@ -38,7 +55,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open on GitHub
+                  Open
                 </a>
               </div>
             </li>
@@ -53,7 +70,8 @@ export default function Projects() {
             Load more
           </button>
           <p className="mt-3 text-sm text-foreground/70">
-            Load more logic (+3 items per click, hide when exhausted) will be added.
+            Load more logic (+3 items per click, hide when exhausted) will be
+            added.
           </p>
         </div>
       </div>
