@@ -15,10 +15,6 @@ export default function About() {
             I’m a Fullstack developer. I enjoy turning complex problems into
             simple, beautiful, and intuitive experiences.
           </p>
-          <p className="mt-3 text-foreground/80">
-            This section will include your real bio, key achievements, and what
-            you’re looking for.
-          </p>
         </div>
       </div>
     </section>
