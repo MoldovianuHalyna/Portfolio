@@ -1,35 +1,4 @@
-const PROJECTS = [
-  {
-    title: "Book Shop",
-    stack: "React,tailwind, Shadcn UI",
-    imageAlt: "Project preview",
-    href: "https://book-shop-uilr.vercel.app/",
-  },
-  {
-    title: "Car Rental",
-    stack: "React, Tailwind",
-    imageAlt: "Project preview",
-    href: "https://rental-car-ruby.vercel.app/",
-  },
-  {
-    title: "Egg Timer",
-    stack: "React, Tailwind",
-    imageAlt: "Project preview",
-    href: "https://egg-timer-phi.vercel.app/",
-  },
-  {
-    title: "T-shop",
-    stack: "React, Tailwind",
-    imageAlt: "Project preview",
-    href: "https://t-shop-jet.vercel.app/",
-  },
-  {
-    title: "Movie Search Service",
-    stack: "React, Tailwind",
-    imageAlt: "Project preview",
-    href: "https://goit-react-hw-05-eight-puce-31.vercel.app/",
-  },
-];
+import { PROJECTS } from "@/constants/projects";
 
 export default function Projects() {
   return (
@@ -39,25 +8,29 @@ export default function Projects() {
 
         <ul className="mt-10 grid gap-6 md:grid-cols-2">
           {PROJECTS.map((p) => (
-            <li
-              key={p.title}
-              className="rounded-xl border border-border bg-background"
-            >
-              <div className="aspect-[16/10] w-full rounded-t-xl bg-muted" />
-              <div className="p-6">
-                <p className="text-xs font-medium text-foreground/60">
-                  {p.stack}
-                </p>
-                <h3 className="mt-2 text-lg font-semibold">{p.title}</h3>
-                <a
-                  className="mt-4 inline-flex text-sm underline-offset-4 hover:underline"
-                  href={p.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open
-                </a>
-              </div>
+            <li key={p.title} className="list-none">
+              <a
+                href={p.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group block overflow-hidden rounded-xl border border-border bg-background transition-transform duration-200 hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              >
+                <img
+                  src={p.imageSrc}
+                  alt={p.imageAlt}
+                  loading="lazy"
+                  className="aspect-[16/10] w-full bg-muted object-cover"
+                />
+                <div className="p-6">
+                  <p className="text-xs font-medium text-foreground/60">
+                    {p.stack}
+                  </p>
+                  <h3 className="mt-2 text-lg font-semibold">{p.title}</h3>
+                  <span className="mt-4 inline-flex text-sm underline-offset-4 group-hover:underline">
+                    Open
+                  </span>
+                </div>
+              </a>
             </li>
           ))}
         </ul>

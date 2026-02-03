@@ -1,10 +1,12 @@
+import { BubbleBackground } from "../animate-ui/components/backgrounds/bubble";
+
 export default function Hero() {
   return (
     <section id="hero" className="px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-center">
         <div>
           <h1 className="text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-            Hello. I’m Fullstack developer
+            Hello. I'm Fullstack developer
           </h1>
           <p className="mt-4 max-w-prose text-foreground/80">
             I build modern web applications with a focus on clean UI,
@@ -50,11 +52,10 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="rounded-xl border border-border bg-muted p-8">
-          <div className="aspect-[4/3] w-full rounded-lg bg-background" />
-          <p className="mt-4 text-sm text-foreground/70">
-            Background image (png) will be added here.
-          </p>
+        <div className="group rounded-xl border border-border bg-muted p-8 transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01]">
+          <div className="aspect-[4/3] w-full overflow-hidden rounded-lg">
+            <BubbleBackground className="rounded-lg from-muted to-background" />
+          </div>
         </div>
       </div>
     </section>
