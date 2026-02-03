@@ -1,17 +1,4 @@
-const BENEFITS = [
-  {
-    title: "Clear communication",
-    text: "Regular updates and transparent progress.",
-  },
-  {
-    title: "Attention to details",
-    text: "Pixel-perfect UI and robust logic.",
-  },
-  {
-    title: "Reliable delivery",
-    text: "Focus on deadlines and quality.",
-  },
-];
+import { BENEFITS } from "@/constants/benefits";
 
 export default function Benefits() {
   return (
@@ -23,7 +10,10 @@ export default function Benefits() {
 
         <ul className="mt-10 grid gap-6 md:grid-cols-3">
           {BENEFITS.map((b) => (
-            <li key={b.title} className="rounded-xl border border-border bg-background p-6">
+            <li
+              key={b.title}
+              className="rounded-xl border border-border bg-background p-6"
+            >
               <h3 className="text-lg font-semibold">{b.title}</h3>
               <p className="mt-2 text-sm text-foreground/80">{b.text}</p>
             </li>
