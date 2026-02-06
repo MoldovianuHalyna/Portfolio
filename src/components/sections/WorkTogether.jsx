@@ -11,21 +11,33 @@ export default function WorkTogether() {
   };
 
   return (
-    <section id="work" className="border-t border-border px-4 py-16 md:px-6 md:py-24">
+    <section
+      id="work"
+      className="border-t border-border px-4 py-16 md:px-6 md:py-24"
+    >
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
         <div>
-          <h2 className="text-3xl font-semibold tracking-tight">Let’s work together</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Let’s work together
+          </h2>
 
           <p className="mt-4 text-foreground/80">
-            Tell me about your project. I’ll get back to you as soon as possible.
+            Tell me about your project. I’ll get back to you as soon as
+            possible.
           </p>
 
           <div className="mt-8 space-y-2 text-sm">
-            <a className="block underline-offset-4 hover:underline" href="tel:+380000000000">
-              +38 (000) 000-00-00
+            <a
+              className="block underline-offset-4 hover:underline"
+              href="tel:+380000000000"
+            >
+              +33 (782) 47-62-25
             </a>
-            <a className="block underline-offset-4 hover:underline" href="mailto:your@email.com">
-              your@email.com
+            <a
+              className="block underline-offset-4 hover:underline"
+              href="mailto:your@email.com"
+            >
+              moldovianuhalyna@gmail.com
             </a>
           </div>
         </div>
@@ -68,7 +80,8 @@ export default function WorkTogether() {
           </button>
 
           <p className="mt-3 text-sm text-foreground/70">
-            On submit we will POST to the backend, show modal on success, toast on error.
+            On submit we will POST to the backend, show modal on success, toast
+            on error.
           </p>
         </form>
       </div>

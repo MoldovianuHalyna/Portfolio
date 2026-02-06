@@ -1,5 +1,3 @@
-import { BubbleBackground } from "../animate-ui/components/backgrounds/bubble";
-
 export default function Hero() {
   return (
     <section id="hero" className="px-4 py-16 md:px-6 md:py-24">
@@ -32,7 +30,7 @@ export default function Hero() {
             <li>
               <a
                 className="text-sm underline-offset-4 hover:underline"
-                href="https://www.instagram.com/goitclub/"
+                href="https://www.linkedin.com/in/halyna-moldovianu/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -42,7 +40,7 @@ export default function Hero() {
             <li>
               <a
                 className="text-sm underline-offset-4 hover:underline"
-                href="https://www.facebook.com/goITclub/"
+                href="https://github.com/MoldovianuHalyna"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -50,12 +48,6 @@ export default function Hero() {
               </a>
             </li>
           </ul>
-        </div>
-
-        <div className="group rounded-xl border border-border bg-muted p-8 transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01]">
-          <div className="aspect-[4/3] w-full overflow-hidden rounded-lg">
-            <BubbleBackground className="rounded-lg from-muted to-background" />
-          </div>
         </div>
       </div>
     </section>

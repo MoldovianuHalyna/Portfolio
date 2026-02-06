@@ -10,26 +10,6 @@ export default function Footer() {
           <li>
             <a
               className="text-sm underline-offset-4 hover:underline"
-              href="https://www.instagram.com/goitclub/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-sm underline-offset-4 hover:underline"
-              href="https://www.facebook.com/goITclub/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-sm underline-offset-4 hover:underline"
               href="https://www.linkedin.com/school/goit-start-your-career-in-it"
               target="_blank"
               rel="noreferrer"
@@ -48,10 +28,6 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-
-        <p className="text-sm text-foreground/70">
-          © Copyright 2024. Made by LloydJefferson
-        </p>
       </div>
     </footer>
   );
